@@ -32,4 +32,4 @@
 - `docker network connect docker-network-name docker-container-name` -> add container to certain network
 - `docker network disconnect docker-network-name docker-container-name` -> remove container from certain network
 - `docker network purne` -> clean up unused network
-- `docker run --network myNet01 nginx --volume /path/to/host:/path/to/container -d -p 80:80 nginx` -> run docker container using custom network, adding volume, in detached mode, expose port 80 to host
+- `docker run --network myNet01 nginx --name my_nginx_c4 --volume /path/to/host:/path/to/container -d -p 80:80 nginx` -> run docker container using custom network, adding volume, in detached mode, expose port 80 to host
